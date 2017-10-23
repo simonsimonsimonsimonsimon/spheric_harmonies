@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMidicontroller.a  CMakeFiles/Midicontroller.dir/midicontroller.cpp.o
+/usr/bin/ranlib libMidicontroller.a

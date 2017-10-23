@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRtMidi.a  CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o
+/usr/bin/ranlib libRtMidi.a

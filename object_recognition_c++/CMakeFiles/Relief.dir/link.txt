@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRelief.a  CMakeFiles/Relief.dir/Relief.cpp.o
+/usr/bin/ranlib libRelief.a

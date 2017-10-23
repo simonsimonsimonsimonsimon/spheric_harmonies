@@ -1,0 +1,6 @@
+/home/nando/supercollider/object_recognition_c++/CMakeFiles/edit_cache.dir
+/home/nando/supercollider/object_recognition_c++/CMakeFiles/Relief.dir
+/home/nando/supercollider/object_recognition_c++/CMakeFiles/rebuild_cache.dir
+/home/nando/supercollider/object_recognition_c++/CMakeFiles/Midicontroller.dir
+/home/nando/supercollider/object_recognition_c++/CMakeFiles/RtMidi.dir
+/home/nando/supercollider/object_recognition_c++/CMakeFiles/DisplayImage.dir
