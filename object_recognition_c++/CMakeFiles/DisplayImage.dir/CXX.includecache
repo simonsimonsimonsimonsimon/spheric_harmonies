@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/nando/supercollider/object_recognition_c++/Relief.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/Relief.h
 cstddef
 -
 cmath
@@ -18,7 +18,7 @@ list
 utility
 -
 
-/home/nando/supercollider/object_recognition_c++/main.cpp
+/home/nando/programming/spheric_harmonies/object_recognition_c++/main.cpp
 iostream
 -
 cstdio
@@ -34,17 +34,17 @@ opencv2/video/background_segm.hpp
 opencv2/bgsegm.hpp
 -
 Relief.h
-/home/nando/supercollider/object_recognition_c++/Relief.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/Relief.h
 midicontroller.h
-/home/nando/supercollider/object_recognition_c++/midicontroller.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/midicontroller.h
 
-/home/nando/supercollider/object_recognition_c++/midicontroller.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/midicontroller.h
 rtmidi/RtMidi.h
-/home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.h
 Relief.h
-/home/nando/supercollider/object_recognition_c++/Relief.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/Relief.h
 
-/home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.h
 exception
 -
 iostream

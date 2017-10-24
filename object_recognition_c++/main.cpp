@@ -66,13 +66,14 @@ int main(int argc,char **argv)
     rel->extract(fgMask);
     rel->detectEdges();
     rel->optimizeResults();
+    rel->manhunt();
     for(int i=0;i<fgMask.cols;i++)
       line(frame,Point(i,0),Point(i,rel->getBrightness(i)),Scalar(0,255,0));
-    for(list<int>::const_iterator it=rel->resultBegin();
-        it!=rel->resultEnd();
-        it++)
+    for(list<int>::const_iterator it=rel->resultBegin();it!=rel->resultEnd();it++)
       line(frame,Point((*it),0),Point((*it),720),Scalar(0,0,255));
 
+    for(list<pair<int,int>>::const_iterator it=rel->indBegin();it!=rel->indEnd();it++)
+      rectangle(frame,Point((*it).first,650),Point((*it).second,700),Scalar(255,0,0));
 
     char buffer[50];
     snprintf(buffer,50,"variance_threshold=%.2f",rel->getVarianceThreshold());
@@ -86,6 +87,18 @@ int main(int argc,char **argv)
     memset(buffer,' ',50);
     snprintf(buffer,50,"gaussian_range=%lu",rel->getGaussRange());
     putText(frame,buffer,Point(20,4*(10+txtHeight)),FONT_HERSHEY_SIMPLEX,1.00,Scalar(255,0,0),1,LINE_AA,false);
+    memset(buffer,' ',50);
+    snprintf(buffer,50,"group_length=%lu",rel->getGroupLength());
+    putText(frame,buffer,Point(20,5*(10+txtHeight)),FONT_HERSHEY_SIMPLEX,1.00,Scalar(255,0,0),1,LINE_AA,false);
+    memset(buffer,' ',50);
+    snprintf(buffer,50,"individual_variance_threshold=%.2f",rel->getIndVarThreshold());
+    putText(frame,buffer,Point(20,6*(10+txtHeight)),FONT_HERSHEY_SIMPLEX,1.00,Scalar(255,0,0),1,LINE_AA,false);
+    memset(buffer,' ',50);
+    snprintf(buffer,50,"individual_variance_range=%lu",rel->getIndVarRange());
+    putText(frame,buffer,Point(20,7*(10+txtHeight)),FONT_HERSHEY_SIMPLEX,1.00,Scalar(255,0,0),1,LINE_AA,false);
+    memset(buffer,' ',50);
+    snprintf(buffer,50,"human_size=%lu",rel->getHSize());
+    putText(frame,buffer,Point(20,8*(10+txtHeight)),FONT_HERSHEY_SIMPLEX,1.00,Scalar(255,0,0),1,LINE_AA,false);
     imshow("Frame",frame);
     imshow("Difference",fgMask);
     keyboard = (int) waitKey( 30 );

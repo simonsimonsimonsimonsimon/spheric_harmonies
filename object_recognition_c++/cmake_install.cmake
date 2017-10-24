@@ -1,4 +1,4 @@
-# Install script for directory: /home/nando/supercollider/object_recognition_c++
+# Install script for directory: /home/nando/programming/spheric_harmonies/object_recognition_c++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nando/supercollider/object_recognition_c++/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nando/programming/spheric_harmonies/object_recognition_c++/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

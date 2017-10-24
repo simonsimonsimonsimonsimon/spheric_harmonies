@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/nando/supercollider/object_recognition_c++/Relief.cpp
+/home/nando/programming/spheric_harmonies/object_recognition_c++/Relief.cpp
 Relief.h
-/home/nando/supercollider/object_recognition_c++/Relief.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/Relief.h
 
-/home/nando/supercollider/object_recognition_c++/Relief.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/Relief.h
 cstddef
 -
 cmath

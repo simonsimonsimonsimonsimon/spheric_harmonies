@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nando/supercollider/object_recognition_c++
+CMAKE_SOURCE_DIR = /home/nando/programming/spheric_harmonies/object_recognition_c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nando/supercollider/object_recognition_c++
+CMAKE_BINARY_DIR = /home/nando/programming/spheric_harmonies/object_recognition_c++
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RtMidi.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/RtMidi.dir/flags.make
 
 CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o: CMakeFiles/RtMidi.dir/flags.make
 CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o: rtmidi/RtMidi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nando/supercollider/object_recognition_c++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o -c /home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o -c /home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.cpp
 
 CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.cpp > CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.cpp > CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.i
 
 CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.cpp -o CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.cpp -o CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.s
 
 CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o.requires:
 
@@ -91,7 +91,7 @@ RtMidi_EXTERNAL_OBJECTS =
 libRtMidi.a: CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o
 libRtMidi.a: CMakeFiles/RtMidi.dir/build.make
 libRtMidi.a: CMakeFiles/RtMidi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nando/supercollider/object_recognition_c++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libRtMidi.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libRtMidi.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/RtMidi.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RtMidi.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/RtMidi.dir/clean:
 .PHONY : CMakeFiles/RtMidi.dir/clean
 
 CMakeFiles/RtMidi.dir/depend:
-	cd /home/nando/supercollider/object_recognition_c++ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nando/supercollider/object_recognition_c++ /home/nando/supercollider/object_recognition_c++ /home/nando/supercollider/object_recognition_c++ /home/nando/supercollider/object_recognition_c++ /home/nando/supercollider/object_recognition_c++/CMakeFiles/RtMidi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nando/programming/spheric_harmonies/object_recognition_c++ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nando/programming/spheric_harmonies/object_recognition_c++ /home/nando/programming/spheric_harmonies/object_recognition_c++ /home/nando/programming/spheric_harmonies/object_recognition_c++ /home/nando/programming/spheric_harmonies/object_recognition_c++ /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/RtMidi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RtMidi.dir/depend
 

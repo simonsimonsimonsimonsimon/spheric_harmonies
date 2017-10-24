@@ -9,7 +9,7 @@ class relief
 {
  public:
   relief();
-  relief(double var_th, size_t var_range, double gauss_sigma, size_t gauss_range,size_t group_th);
+  relief(double var_th, size_t var_range, double gauss_sigma, size_t gauss_range,size_t group_th,double ind_var_th,size_t ind_var_range,size_t h_size);
   ~relief();
   //plain setters
   void setVarianceThreshold(double var_th);
@@ -44,9 +44,12 @@ class relief
   void extract(cv::InputArray mask);
   void detectEdges();
   void optimizeResults();
+  void manhunt();
   int getBrightness(int col);
   std::list<int>::const_iterator resultBegin();
   std::list<int>::const_iterator resultEnd();
+  std::list<std::pair<int,int>>::const_iterator indBegin();
+  std::list<std::pair<int,int>>::const_iterator indEnd();
   void clear();
  private:
   void detect();
@@ -94,8 +97,8 @@ class relief
   std::list<std::pair<int,int>>* individuals;
 
   double var_th;
-  const double var_th_min = 100;
-  const double var_th_max = 5000;
+  const double var_th_min = 20;
+  const double var_th_max = 2000;
 
   size_t var_range;
   const double var_range_min = 2;
@@ -111,15 +114,15 @@ class relief
 
   size_t group_th;
   const double group_th_min = 2;
-  const double group_th_max = 20;
+  const double group_th_max = 50;
 
   double ind_var_th;
-  const double ind_var_th_min = 100;
-  const double ind_var_th_max = 5000;
+  const double ind_var_th_min = 10;
+  const double ind_var_th_max = 200;
 
   size_t ind_var_range;
   const double ind_var_range_min = 2;
-  const double ind_var_range_max = 10;
+  const double ind_var_range_max = 20;
 
   size_t h_size;
   const double h_size_min = 100;

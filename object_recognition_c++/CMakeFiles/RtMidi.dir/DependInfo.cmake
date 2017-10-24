@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.cpp" "/home/nando/supercollider/object_recognition_c++/CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o"
+  "/home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.cpp" "/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/RtMidi.dir/rtmidi/RtMidi.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

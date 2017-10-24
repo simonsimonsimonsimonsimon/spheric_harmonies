@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nando/supercollider/object_recognition_c++
+CMAKE_SOURCE_DIR = /home/nando/programming/spheric_harmonies/object_recognition_c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nando/supercollider/object_recognition_c++
+CMAKE_BINARY_DIR = /home/nando/programming/spheric_harmonies/object_recognition_c++
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles /home/nando/supercollider/object_recognition_c++/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named run
+
+# Build rule for target.
+run: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run
+.PHONY : run
+
+# fast build rule for target.
+run/fast:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+.PHONY : run/fast
 
 #=============================================================================
 # Target rules for targets named Relief
@@ -277,6 +290,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... run"
 	@echo "... Relief"
 	@echo "... rebuild_cache"
 	@echo "... Midicontroller"

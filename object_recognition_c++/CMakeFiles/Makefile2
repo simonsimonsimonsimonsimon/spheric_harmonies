@@ -54,10 +54,42 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nando/supercollider/object_recognition_c++
+CMAKE_SOURCE_DIR = /home/nando/programming/spheric_harmonies/object_recognition_c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nando/supercollider/object_recognition_c++
+CMAKE_BINARY_DIR = /home/nando/programming/spheric_harmonies/object_recognition_c++
+
+#=============================================================================
+# Target rules for target CMakeFiles/run.dir
+
+# All Build rule for target.
+CMakeFiles/run.dir/all:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles --progress-num= "Built target run"
+.PHONY : CMakeFiles/run.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 0
+.PHONY : CMakeFiles/run.dir/rule
+
+# Convenience name for target.
+run: CMakeFiles/run.dir/rule
+
+.PHONY : run
+
+# clean rule for target.
+CMakeFiles/run.dir/clean:
+	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/clean
+.PHONY : CMakeFiles/run.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/run.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Relief.dir
@@ -66,7 +98,7 @@ CMAKE_BINARY_DIR = /home/nando/supercollider/object_recognition_c++
 CMakeFiles/Relief.dir/all:
 	$(MAKE) -f CMakeFiles/Relief.dir/build.make CMakeFiles/Relief.dir/depend
 	$(MAKE) -f CMakeFiles/Relief.dir/build.make CMakeFiles/Relief.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/supercollider/object_recognition_c++/CMakeFiles --progress-num=5,6 "Built target Relief"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles --progress-num=5,6 "Built target Relief"
 .PHONY : CMakeFiles/Relief.dir/all
 
 # Include target in all.
@@ -76,9 +108,9 @@ all: CMakeFiles/Relief.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Relief.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Relief.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 0
 .PHONY : CMakeFiles/Relief.dir/rule
 
 # Convenience name for target.
@@ -103,7 +135,7 @@ clean: CMakeFiles/Relief.dir/clean
 CMakeFiles/Midicontroller.dir/all: CMakeFiles/RtMidi.dir/all
 	$(MAKE) -f CMakeFiles/Midicontroller.dir/build.make CMakeFiles/Midicontroller.dir/depend
 	$(MAKE) -f CMakeFiles/Midicontroller.dir/build.make CMakeFiles/Midicontroller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/supercollider/object_recognition_c++/CMakeFiles --progress-num=3,4 "Built target Midicontroller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles --progress-num=3,4 "Built target Midicontroller"
 .PHONY : CMakeFiles/Midicontroller.dir/all
 
 # Include target in all.
@@ -113,9 +145,9 @@ all: CMakeFiles/Midicontroller.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Midicontroller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Midicontroller.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 0
 .PHONY : CMakeFiles/Midicontroller.dir/rule
 
 # Convenience name for target.
@@ -140,7 +172,7 @@ clean: CMakeFiles/Midicontroller.dir/clean
 CMakeFiles/RtMidi.dir/all:
 	$(MAKE) -f CMakeFiles/RtMidi.dir/build.make CMakeFiles/RtMidi.dir/depend
 	$(MAKE) -f CMakeFiles/RtMidi.dir/build.make CMakeFiles/RtMidi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/supercollider/object_recognition_c++/CMakeFiles --progress-num=7,8 "Built target RtMidi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles --progress-num=7,8 "Built target RtMidi"
 .PHONY : CMakeFiles/RtMidi.dir/all
 
 # Include target in all.
@@ -150,9 +182,9 @@ all: CMakeFiles/RtMidi.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RtMidi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RtMidi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 0
 .PHONY : CMakeFiles/RtMidi.dir/rule
 
 # Convenience name for target.
@@ -179,7 +211,7 @@ CMakeFiles/DisplayImage.dir/all: CMakeFiles/Midicontroller.dir/all
 CMakeFiles/DisplayImage.dir/all: CMakeFiles/RtMidi.dir/all
 	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/depend
 	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/supercollider/object_recognition_c++/CMakeFiles --progress-num=1,2 "Built target DisplayImage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles --progress-num=1,2 "Built target DisplayImage"
 .PHONY : CMakeFiles/DisplayImage.dir/all
 
 # Include target in all.
@@ -189,9 +221,9 @@ all: CMakeFiles/DisplayImage.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DisplayImage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DisplayImage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/supercollider/object_recognition_c++/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles 0
 .PHONY : CMakeFiles/DisplayImage.dir/rule
 
 # Convenience name for target.

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nando/supercollider/object_recognition_c++/main.cpp" "/home/nando/supercollider/object_recognition_c++/CMakeFiles/DisplayImage.dir/main.cpp.o"
+  "/home/nando/programming/spheric_harmonies/object_recognition_c++/main.cpp" "/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/DisplayImage.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,9 +16,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/nando/supercollider/object_recognition_c++/CMakeFiles/Relief.dir/DependInfo.cmake"
-  "/home/nando/supercollider/object_recognition_c++/CMakeFiles/Midicontroller.dir/DependInfo.cmake"
-  "/home/nando/supercollider/object_recognition_c++/CMakeFiles/RtMidi.dir/DependInfo.cmake"
+  "/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/Relief.dir/DependInfo.cmake"
+  "/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/Midicontroller.dir/DependInfo.cmake"
+  "/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/RtMidi.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

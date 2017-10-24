@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nando/supercollider/object_recognition_c++/Relief.cpp" "/home/nando/supercollider/object_recognition_c++/CMakeFiles/Relief.dir/Relief.cpp.o"
+  "/home/nando/programming/spheric_harmonies/object_recognition_c++/Relief.cpp" "/home/nando/programming/spheric_harmonies/object_recognition_c++/CMakeFiles/Relief.dir/Relief.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -13,9 +13,14 @@ relief::relief()
   gauss_range = 10;
 
   group_th = 10;
+
+  ind_var_th = 450.00;
+  ind_var_range = 2;
+
+  h_size = 100;
 }
 
-relief::relief(double var_th, size_t var_range, double gauss_sigma, size_t gauss_range,size_t group_th)
+relief::relief(double var_th, size_t var_range, double gauss_sigma, size_t gauss_range,size_t group_th,double ind_var_th,size_t ind_var_range,size_t h_size)
 {
   length = -1;
   results = new std::list<int>();
@@ -28,6 +33,12 @@ relief::relief(double var_th, size_t var_range, double gauss_sigma, size_t gauss
   this->gauss_range = gauss_range;
 
   this->group_th = group_th;
+
+
+  this->ind_var_th = ind_var_th;
+  this->ind_var_range = ind_var_range;
+
+  this->h_size = h_size;
 }
 
 relief::~relief()
@@ -198,6 +209,10 @@ void relief::optimizeResults()
   this->group_really_close();
 }
 
+void relief::manhunt()
+{
+  this->find_individuals();
+}
 int relief::getBrightness(int col)
 {
   if( length >=0 && col >= 0 && col < length )
@@ -214,6 +229,16 @@ std::list<int>::const_iterator relief::resultBegin()
 std::list<int>::const_iterator relief::resultEnd()
 {
   return results->cend();
+}
+
+std::list<std::pair<int,int>>::const_iterator relief::indBegin()
+{
+  return individuals->cbegin();
+}
+
+std::list<std::pair<int,int>>::const_iterator relief::indEnd()
+{
+  return individuals->cend();
 }
 
 void relief::clear()
@@ -330,8 +355,8 @@ void relief::find_individuals()
   std::list<std::pair<int,int>>* valuation = new std::list<std::pair<int,int>>();
   for(std::list<int>::iterator it=results->begin();it!=results->end();it++)
   {
-    double vb4 = variance_at((*it)-ind_var_range,ind_var_range);
-    double v4r = variance_at((*it)+ind_var_range,ind_var_range);
+    double vb4 = variance_at((*it)-ind_var_range-group_th,ind_var_range);
+    double v4r = variance_at((*it)+ind_var_range+group_th,ind_var_range);
     if(vb4 < ind_var_th && v4r < ind_var_th )
       valuation->push_back(std::make_pair<int,int>((int)(*it),0));
     else if(vb4 < ind_var_th && v4r >= ind_var_th)
@@ -356,43 +381,32 @@ void relief::find_individuals()
         }
         else
         {
-          bool found_smthg = false;
           for(int i=(*it).first;i<(*rit).first-ind_var_range;i++)
           {
             if(variance_at(i,ind_var_range) < ind_var_th)
             {
-              found_smthg = true;
               individuals->push_back(std::make_pair<int,int>((int)(*it).first,(int)i));
               break;
             }
           }
-          if(!found_smthg) //drop it
-            std::advance(it,1);
+          std::advance(it,1);
         }
       }
       else
       {
-        bool found_smthg =  false;
-        if(std::distance(it,valuation->begin())>=1)
+        for(int i=(*it).first;i<length-1;i++)
         {
-          std::list<std::pair<int,int>>::iterator lit = std::next(it,-1);
-          for(int i=(*it).first;i>(*lit).first+ind_var_range;i--)
+          if(variance_at(i,ind_var_range) < ind_var_th)
           {
-            if(variance_at(i,ind_var_range) < ind_var_th)
-            {
-              found_smthg = true;
-              individuals->push_back(std::make_pair<int,int>((int)i,(int)(*it).first));
-              break;
-            }
+            individuals->push_back(std::make_pair<int,int>((int)(*it).first,(int)i));
+            break;
           }
-          if(!found_smthg)//drop it
-            std::advance(it,1);
         }
+        std::advance(it,1);
       }
     }
     else
     {
-      bool found_smthg =  false;
       if(std::distance(it,valuation->begin())>=1)
       {
         std::list<std::pair<int,int>>::iterator lit = std::next(it,-1);
@@ -400,14 +414,14 @@ void relief::find_individuals()
         {
           if(variance_at(i,ind_var_range) < ind_var_th)
           {
-            found_smthg = true;
             individuals->push_back(std::make_pair<int,int>((int)i,(int)(*it).first));
             break;
           }
         }
-        if(!found_smthg)//drop it
-          std::advance(it,1);
+        std::advance(it,1);
       }
+      else
+        std::advance(it,1);
     }
   }
   delete valuation;

@@ -36,6 +36,21 @@ void mycallback( double deltatime, std::vector< unsigned char > *message, void *
         relObj->setMGroupLength(message->at(2));
         cout<<"Setting group length to: "<<relObj->getGroupLength()<<"."<<endl;
         break;
+      case 82:
+        relObj->setMIndVarThreshold(message->at(2));
+        cout<<"Setting individual variance threshold to: "
+            <<relObj->getIndVarThreshold()<<"."<<endl;
+        break;
+      case 83:
+        relObj->setMIndVarRange(message->at(2));
+        cout<<"Setting individual variance range to: "
+            <<relObj->getIndVarRange()<<"."<<endl;
+        break;
+      case 84:
+        relObj->setMHSize(message->at(2));
+        cout<<"Setting human size to: "
+            <<relObj->getHSize()<<"."<<endl;
+        break;
       default:
         cout<<"Unused controll encountered."<<endl;
         break;

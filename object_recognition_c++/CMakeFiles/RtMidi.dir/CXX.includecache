@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.cpp
+/home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.cpp
 RtMidi.h
-/home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.h
 sstream
 -
 CoreMIDI/CoreMIDI.h
@@ -36,7 +36,7 @@ jack/ringbuffer.h
 semaphore.h
 -
 
-/home/nando/supercollider/object_recognition_c++/rtmidi/RtMidi.h
+/home/nando/programming/spheric_harmonies/object_recognition_c++/rtmidi/RtMidi.h
 exception
 -
 iostream
